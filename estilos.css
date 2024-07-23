@@ -34,6 +34,27 @@ p {
     left: 0;
 }
 
+#header .nom-container{
+    display: flex;
+    justify-content:flex-start;
+}
+
+#nombre {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+#nombre li {
+    list-style: none;
+}
+
+#nombre li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
 /*MENÚ PRINCIPAL*/
 
 #navbar {
@@ -75,16 +96,29 @@ p {
 /*DESCRIPCIÓN*/
 
 #Info {
+    justify-content: space-between;
+}
 
+#Info .info-container{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    align-items: center;
+}
+
+#Info img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
 }
 
 #Info h4{
-    padding-bottom: 15px;
     text-align: left;
     word-break: break-word;
     line-break: normal;
     hyphens: auto;
     overflow-wrap: break-word;
+    width: 700px;
 }
 
 #Info .logo{
@@ -110,7 +144,7 @@ p {
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
+    border: 1px solid #f1edea;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -131,6 +165,7 @@ footer .logo {
 
 footer h4 {
     font-size: 14px;
+    margin-top: 35px;
     margin-bottom: 20px;
 }
 
@@ -146,19 +181,19 @@ footer p {
 
 #datos .dat-container{
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    justify-content: left;
+    padding-top: 10px;
     align-items: center;
 }
 
 #datos .dat{
-    width: 23%;
-    min-width: 400px;
+    width: 30%;
+    min-width: 10px;
     padding: 10px 12px;
 }
 
 footer .follow {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -174,7 +209,7 @@ footer .follow i {
 
 footer .follow i:hover,
 footer a:hover {
-    color: #088178;
+    color: #5f9ea0;
 }
 
 footer .copyright {
