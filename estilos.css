@@ -10,9 +10,12 @@
     font-style: normal;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 p {
     font-size: 16px;
-    color: black;
     margin: 15 px 0 20px 0;
 }
 
@@ -96,29 +99,48 @@ p {
 /*DESCRIPCIÓN*/
 
 #Info {
-    justify-content: space-between;
+    background-image: url("img/comunidad.png");
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#Info:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #Info .info-container{
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 10px;
+    padding: 10px;
     align-items: center;
 }
 
-#Info img{
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
+#Info h1{
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    align-items: center;
 }
 
-#Info h4{
-    text-align: left;
-    word-break: break-word;
-    line-break: normal;
-    hyphens: auto;
-    overflow-wrap: break-word;
-    width: 700px;
+#Info p{
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    color: #ffffff;
+    position: relative;
+    font-size: 25px;
 }
 
 #Info .logo{
