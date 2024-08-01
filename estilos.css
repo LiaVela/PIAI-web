@@ -181,52 +181,65 @@ footer {
     background-color: #f1edea;
 }
 
-footer .logo {
-    /*position: relative;*/
-}
-
 footer h4 {
     font-size: 14px;
-    margin-top: 35px;
-    margin-bottom: 20px;
+    margin: 5%;
+    text-align: left;
 }
 
 footer p {
     font-size: 13px;
-    margin: 0 0 8px 0;
+    margin: 4%;
     position: relative;
+    text-align: left; 
 }
 
 #datos{
-    text-align: left;
+    /*text-align: left;*/
 }
 
 #datos .dat-container{
     display: flex;
-    justify-content: left;
-    padding-top: 10px;
+    /*justify-content: left;*/
+    padding: 10px;
     align-items: center;
 }
 
 #datos .dat{
-    width: 30%;
+    width: 50%;
     min-width: 10px;
-    padding: 10px 12px;
+    text-align: center;
+    /*padding: 5px;*/
 }
 
-footer .follow {
+#datos .dat .logo{
+    position: relative;
+}
+
+/*footer .follow {
     margin-top: 40px;
     text-align: center;
+}*/
+
+footer .follow h4{
+    text-align: center;
 }
+
+/*footer.follow .icon{
+    text-align: center;
+    justify-content: center;
+}*/
 
 footer .follow i {
     color: #465b52;
-    padding-top: 10px;
-    padding-right: 50px;
+    /*padding-top: 10px;
+    padding-right: 50px;*/
+    padding: 5%;
     cursor: pointer;
     position: relative;
-    left: 30px;
+    /*left: 30px;*/
     text-align: center;
+    font-size: 200%;
 }
 
 footer .follow i:hover,
@@ -235,7 +248,10 @@ footer a:hover {
 }
 
 footer .copyright {
-    padding-top: 40px;
-    width: 100%;
+    margin: auto;
+    /*text-align: center;*/
+}
+
+footer .copyright p{
     text-align: center;
 }
