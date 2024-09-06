@@ -229,6 +229,59 @@ p {
     transition: 100ms;
 }
 
+/*PERIODICOS*/
+
+#periodicos {
+    background: #fff;
+}
+
+#periodicos h2 {
+    padding: 1%;
+    text-align: center;
+}
+
+#periodicos .periodico-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    /*background: #f3f1f5;*/
+}
+
+#periodicos .card {
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+#periodicos .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#periodicos .content h3, a{
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#periodicos .card:hover .content {
+    opacity: 1;
+}
+
 /*FOOTER*/
 
 footer {
