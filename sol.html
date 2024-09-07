@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElSol - PIAI</title>
+    <script src="https://kit.fontawesome.com/08e5da262a.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="nom-container">
+            <a href="#"><img src="img/Logo.png" class="logo" alt="" height="70" width="70"></a>
+            <ul id="nombre">
+                <li><a href="index.html">PIAI - Programa de Interculturalidad y Asuntos Indígenas</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="acervos.html">Acervos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/hidricos.jpeg" alt="" class="image-new">
+                <div class="image-txt">
+                    <span class="text">Titulo de la noticia</span>
+                    <h2>Titulo</h2>
+                    <a href="#" class="btn-2">Más información..</a>
+                </div>
+            </div>
+
+
+            <div class="slide swiper-slide">
+                <img src="img/hidricos.jpeg" alt="" class="image-new">
+                <div class="image-txt">
+                    <span class="text">Titulo de la noticia</span>
+                    <h2>Titulo</h2>
+                    <a href="#" class="btn-2">Más información..</a>
+                </div>
+            </div>
+
+
+            <div class="slide swiper-slide">
+                <img src="img/hidricos.jpeg" alt="" class="image-new">
+                <div class="image-txt">
+                    <span class="text">Titulo de la noticia</span>
+                    <h2>Titulo</h2>
+                    <a href="#" class="btn-2">Más información..</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+    <footer class="section-p1">
+        <section id="datos">
+            <div class="dat-container">
+                <div class="dat">
+                    <img class="logo" src="img/Logo.png" alt="" height="100" width="100">
+                    <h4>Contacto</h4>
+                    <p><strong>Dirección: </strong> Prolongación Paseo de Reforma 880, </p>
+                    <p>Lomas de Santa Fe, México, C.P. 01219,</p>
+                    <p>Ciudad de México.</p>
+                    <p><strong>Teléfono: </strong> +52 (55) 5950-4000 y 9177-4400.</p>
+                    <p><strong>Lada nacional sin costo: </strong> 01 800 627-7615.</p>
+                </div>
+
+                <div class="dat">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.994122213392!2d-99.26659062494035!3d19.36940718189651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200db00f55383%3A0x31d84ccbb5acaf18!2sUniversidad%20Iberoamericana%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1721669253920!5m2!1ses!2smx" width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="dat">
+                   <div class="follow"> 
+                        <h4>Siguenos en</h4>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/piai_ibero?igsh=bGJ1MnlpcDFpcTIw&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href= "https://x.com/piai_uia?s=11&t=HnK4XiSOzgeb-zOkzL_9Hw" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+            
+        <div class="copyright">
+            <p>© 2024 Universidad Iberoamericana</p>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+
+</body>
+</html>

@@ -99,7 +99,7 @@ p {
 /*DESCRIPCIÓN*/
 
 #Info {
-    background-image: url("img/comunidad.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/comunidad.png");
     height: 85vh;
     width: 100%;
     background-size: cover;
@@ -109,16 +109,6 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
-
-#Info:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #Info .info-container{
@@ -155,10 +145,10 @@ p {
 #notes{  
     justify-content: center;
     align-items: center;
+    padding: 40px 10px 15px 10px;
 }
 
 #notes h2{
-    padding-top: 3%;
     text-align: center;
 }
 
@@ -233,10 +223,11 @@ p {
 
 #periodicos {
     background: #fff;
+    min-height: 75%;
+    padding: 10px 10px 35px 10px;
 }
 
 #periodicos h2 {
-    padding: 1%;
     text-align: center;
 }
 
@@ -244,7 +235,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 40vh;
+    background: #fff;
     /*background: #f3f1f5;*/
 }
 
@@ -344,4 +336,123 @@ footer .copyright {
 
 footer .copyright p{
     text-align: center;
+}
+
+
+
+/***************CSS PARA SOL.HTML*******************/
+
+/*HOME - main*/
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper,
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.slide .image-new{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .image-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+.image-txt span.text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.image-txt h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+
+a.btn-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+a.btn-2:hover {
+    color: #fff;
+    background-color: #5f9ea0;
+}
+
+/*Boton de siguiente y atras de noticias principales*/
+
+.nav-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-button-next {
+    right: 50px;
+}
+
+.swiper-button-prev {
+    left: 50px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+    font-size: 25px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    /*visibility: hidden;*/
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #5f9ea0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-btn {
+        visibility: hidden;
+    }
 }
