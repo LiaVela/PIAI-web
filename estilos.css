@@ -28,7 +28,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 6px 60px;
     background: #f1edea;
     box-shadow: 0 5px 15 px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -43,8 +43,10 @@ p {
 }
 
 #nombre {
-    padding-left: 20px;
-    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 #nombre li {
@@ -345,7 +347,7 @@ footer .copyright p{
 /*HOME - main*/
 
 .main {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
 }
 
@@ -385,7 +387,7 @@ footer .copyright p{
 }
 
 .image-txt span.text {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     color: #fff;
 }
@@ -404,6 +406,7 @@ a.btn-2 {
     background: #fff;
     text-decoration: none;
     margin-top: 25px;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
 
