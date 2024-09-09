@@ -8,6 +8,8 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+
+    cursor: default;
 }
 
 h1 {
@@ -382,7 +384,7 @@ footer .copyright p{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
+    width: 90%;
     z-index: 100;
 }
 
@@ -458,4 +460,88 @@ a.btn-2:hover {
     .nav-btn {
         visibility: hidden;
     }
+}
+
+/*CSS para las notas periodisticas*/
+
+#container {
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#container h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+#container .container-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    max-width: 85%;
+}
+
+#container .card-new {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#container .card-new .container-img {
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+#container .card-new .container-img img{
+    width: 100%;
+}
+
+#container .content-new a, h3 {
+    font-size: 20px;
+    margin-bottom: 1.7rem;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#container .content-new a, h3:hover {
+    color: #5f9ea0;
+    cursor: pointer;
+}
+
+#container .content-new p {
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #777;
+}
+
+#container .content-new span {
+    color: #777;
+    font-size: 15px;
+}
+
+#container .btn-3 {
+    padding: 6px 30px;
+    background-color: #5f9ea0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600px;
+    border-radius: 32px;
+    margin: 3rem 0 5rem;
+    display: inline-block;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#container .btn-3:hover {
+    background-color: rgb(95, 158, 160);
+    box-shadow: 0px 15px 20px rgba(95, 158, 160, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
