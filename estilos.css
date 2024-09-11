@@ -8,8 +8,6 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-
-    cursor: default;
 }
 
 h1 {
@@ -30,13 +28,16 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 60px;
+    padding: 5px 60px;
     background: #f1edea;
     box-shadow: 0 5px 15 px rgba(0, 0, 0, 0.06);
-    z-index: 999;
     position: sticky;
     top: 0;
-    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    /*left: 0;
+    min-height: 60px;*/
 }
 
 #header .nom-container{
@@ -65,27 +66,31 @@ p {
 /*MENÚ PRINCIPAL*/
 
 #navbar {
-    max-width: 900px;
-    margin: auto;
     display: flex;
-    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*max-width: 900px;
+    margin: auto;
+    justify-content: space-around;*/
 }
 
 #navbar li {
     display: flex;
     list-style: none;
-    padding: 0 20px;
     position: relative;
+    float: left;
     color: #000;
 }
 
 #navbar li a {
-    display: block;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #1a1a1a;
-    transition: 0.3s ease;
+    padding: 0px 20px;
+    display: block;
+    transition: color 0.3s ease;
 }
 
 #navbar > li > a:hover,
@@ -104,26 +109,30 @@ p {
     left: 20px;
 }
 
-.navbar-vertical {
+#navbar .navbar-vertical {
     position: absolute;
     display: none;
     list-style: none;
-    width: 180px;
+    width: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     top: 100%;
     left: 0;
+    padding: 0;
+    z-index: 10;
 }
 
-#navbar li:hover .navbar-vertical {
+.navbar-vertical li {
+    background-color: #f1edeadc;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#navbar > li:hover .navbar-vertical {
     display: block;
 }
 
 #navbar > li:hover > a {
     color:#5f9ea0;
-}
-
-.navbar-vertical li {
-    background-color: #f1edeadc;
 }
 
 .navbar-vertical li a {
@@ -151,75 +160,75 @@ p {
 .btn-bar {
     display: none;
     align-items: center;
+    cursor: pointer;
+}
+
+.btn-bar i:hover,
+.btn-bar i:active {
+    color: #5f9ea0;
 }
 
 #close {
     display: none;
 }
 
-/*#navbar .btn-bar {
-    color: #000;
-    font-size: 16px;
-    cursor: pointer;
-    display: none;
-}*/
-
-/*DROPDOWN MENU*/
-
-/*.dropdown-menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+#close i:hover,
+#close i:active {
+    color: #5f9ea0;
 }
-
-.dropdown-menu.open {
-    height: 240px;
-}
-
-.dropdown-menu li {
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
 
 /*****RESPONSIVE DE NAVBAR*********/
 
-@media(max-width: 799px) {
+@media(max-width: 1300px) {
+    #header {
+        padding: 10px 20px;
+    }
+
     #navbar {
-        display: flex;
+        display: block;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: -300px;
         height: 100vh;
         width: 300px;
         background-color: #f1edea;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
-        transition: 0.3s;
+        transition: 0.3s ease;
     }
 
     #navbar.active {
         right: 0px;
     }
 
-    #navbar li {
-        margin-bottom: 25px;
+    #navbar li{
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+        display: block;
+    }
+
+    .navbar-vertical {
+        position: relative;
+        display: none;
+        width: 100%;
+    }
+
+    #navbar li:hover .navbar-vertical,
+    #navbar li:focus-within .navbar-vertical {
+        position: static;
+        width: 100%;
+    }
+    
+
+    .navbar-vertical li {
+        padding: 10px 15px;
     }
 
     .btn-bar {
         display: flex;
-        align-items: center;
     }
 
     .btn-bar i {
@@ -481,7 +490,7 @@ footer .copyright p{
 
 
 
-/***************CSS PARA SOL.HTML*******************/
+/***************CSS PARA SOL.HTML***************/
 
 /*HOME - main*/
 
@@ -593,13 +602,15 @@ a.btn-2:hover {
     background-color: #5f9ea0;
 }
 
+/*RESPONSIVE DEL SWIPER DE PERIODICOS*/
+
 @media screen and (max-width: 768px) {
     .nav-btn {
         visibility: hidden;
     }
 }
 
-/*CSS para las notas periodisticas*/
+/*CSS PARA NOTAS PERIODISTICAS*/
 
 #container {
     display:flex;

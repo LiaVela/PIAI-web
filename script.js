@@ -1,3 +1,4 @@
+/*SWIPER DE NOTAS INFORMATIVAS*/
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -17,6 +18,24 @@ var swiper = new Swiper(".mySwiper", {
     }
 
   });
+
+  /*SWIPER MAIN DE CADA PERIODICO*/
+  var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay:{
+        delay:4000,
+        disableOnInteraction:false,
+    }
+    });
 
   /*VARIABLES PARA EL CLICK EN NAVBAR*/
   const bar = document.getElementById("bar");

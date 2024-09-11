@@ -22,17 +22,31 @@
         
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="acervos.html">Acervos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="https://piai.ibero.mx/acervos/">Acervos</a></li>
+                <li><a href="https://piai.ibero.mx/eventos/">Eventos</a></li>
+                <li><a href="https://piai.ibero.mx/proyectos/">Proyectos</a></li>
+                <li>
+                    <a class="active">Periódicos</a>
+                    <ul class="navbar-vertical">
+                        <li><a href="">El Sol</a></li>
+                        <li><a href="">El Universal</a></li>
+                        <li><a href="">La Jornada</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="https://piai.ibero.mx/contacto/">Contacto</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
+            <div class="btn-bar">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
         </div>
+
     </section>
 
 
-    <section class="main swiper mySwiper">
+    <section class="main swiper2 mySwiper2">
         <div class="wrapper swiper-wrapper">
             <div class="slide swiper-slide">
                 <img src="img/fondoSol.jpg" alt="" class="image-new">
@@ -266,25 +280,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        autoplay:{
-            delay:4000,
-            disableOnInteraction:false,
-        }
-        });
-    </script>
+<script src="script.js"></script>
 
 </body>
 </html>
