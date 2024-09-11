@@ -65,23 +65,22 @@ p {
 /*MENÚ PRINCIPAL*/
 
 #navbar {
-    /*width: 0%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;*/
-
+    max-width: 900px;
+    margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #navbar li {
+    display: flex;
     list-style: none;
     padding: 0 20px;
     position: relative;
+    color: #000;
 }
 
 #navbar li a {
+    display: block;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -89,8 +88,8 @@ p {
     transition: 0.3s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
+#navbar > li > a:hover,
+#navbar > li > a.active {
     color: #5f9ea0;
 }
 
@@ -101,9 +100,53 @@ p {
     height: 2px;
     background: #5f9ea0;
     position: absolute;
-    bottom: -4px;
+    bottom: 1px;
     left: 20px;
 }
+
+.navbar-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    left: 0;
+}
+
+#navbar li:hover .navbar-vertical {
+    display: block;
+}
+
+#navbar > li:hover > a {
+    color:#5f9ea0;
+}
+
+.navbar-vertical li {
+    background-color: #f1edeadc;
+}
+
+.navbar-vertical li a {
+    display: block;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-vertical li:hover{
+    background-color: #5f9ea0;
+}
+
+.navbar-vertical li:hover > a {
+    color: #fff !important;
+}
+
+.navbar-vertical a:hover { 
+    color: #fff !important;
+}
+
+
+/*BOTON HAMBURGUESA Y BOTON CERRAR*/
 
 .btn-bar {
     display: none;
