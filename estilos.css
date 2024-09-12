@@ -24,6 +24,7 @@ p {
 }
 
 /*HEADER*/
+
 #header {
     display: flex;
     align-items: center;
@@ -35,9 +36,6 @@ p {
     top: 0;
     width: 100%;
     z-index: 1000;
-    
-    /*left: 0;
-    min-height: 60px;*/
 }
 
 #header .nom-container{
@@ -70,9 +68,6 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
-    /*max-width: 900px;
-    margin: auto;
-    justify-content: space-around;*/
 }
 
 #navbar li {
@@ -177,7 +172,7 @@ p {
     color: #5f9ea0;
 }
 
-/*****RESPONSIVE DE NAVBAR*********/
+/*********RESPONSIVE DE NAVBAR*********/
 
 @media(max-width: 1300px) {
     #header {
@@ -186,7 +181,6 @@ p {
 
     #navbar {
         display: none;
-
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
@@ -198,7 +192,6 @@ p {
         background-color: #f1edea;
         padding: 80px 0 0 10px;
         transition: 0.3s ease;
-
         max-height: 0;
         overflow: hidden;
     }
@@ -228,7 +221,6 @@ p {
         width: 100%;
     }
     
-
     .navbar-vertical li {
         padding: 10px 15px;
     }
@@ -252,23 +244,23 @@ p {
     }
 }
 
-/*DESCRIPCIÓN*/
+/**********DESCRIPCIÓN**********/
 
 #Info {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/comunidad.png");
-    height: 85vh;
-    width: 100%;
-    background-size: cover;
+    /*flex-direction: column;*/
+    /*background-position: center center;*/
     background-position: top 25% right 0;
-    padding: 0 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 80px 0;
 }
 
 #Info .info-container{
-    padding: 10px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -277,24 +269,31 @@ p {
     color: #ffffff;
     position: relative;
     align-items: center;
+    line-height: 1.3;
+    font-size: 40px;
 }
 
 #Info p{
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 10px;
+    padding: 15px 18%;
     color: #ffffff;
     position: relative;
-    font-size: 25px;
+    font-size: 22px;
 }
 
-#Info .logo{
-    position: relative;
-    margin-bottom: 30px;
-    top: 15px;
-    left: 15px;
+
+/*****RESPONSIVE DE DESCRIPCIÓN*****/
+@media (max-width: 1021px) {
+
+    #Info h1{
+        font-size: 30px;
+    }
+
+    #Info p {
+        font-size: 18px;
+    }
 }
+
 
 /*NOTAS*/
 
@@ -359,7 +358,8 @@ p {
     text-decoration: none;
     margin-top: 20px;
     font-size: 14px;
-    transition: all .5s ease;
+    font-weight: 600;
+    transition: all 0.5s ease;
 }
 
 .btn:hover{
@@ -375,7 +375,7 @@ p {
     transition: 100ms;
 }
 
-/*PERIODICOS*/
+/*************PERIODICOS****************/
 
 #periodicos {
     background: #fff;
@@ -391,15 +391,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 25vh;
     background: #fff;
     /*background: #f3f1f5;*/
 }
 
 #periodicos .card {
     margin: 20px;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
     background: var(--i);
     background-size: cover;
@@ -428,6 +428,28 @@ p {
 
 #periodicos .card:hover .content {
     opacity: 1;
+}
+
+/*RESPONSIVE DE PERIODICOS*/
+@media (max-width: 880px){
+    #periodicos .periodico-container {
+        min-height: 25vh;
+    }
+    #periodicos .card {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:730px) {
+    #periodicos .periodico-container {
+        flex-direction: column;
+    }
+
+    #periodicos .card {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 /*FOOTER*/
@@ -503,6 +525,7 @@ footer .copyright p{
 .main {
     height: 85vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .wrapper,
@@ -653,7 +676,7 @@ a.btn-2:hover {
     width: 100%;
 }
 
-#container .content-new a, h3 {
+#container .content-new a h3 {
     font-size: 20px;
     margin-bottom: 1.7rem;
     color: #000;
@@ -661,7 +684,7 @@ a.btn-2:hover {
     text-decoration: none;
 }
 
-#container .content-new a, h3:hover {
+#container .content-new a h3:hover {
     color: #5f9ea0;
     cursor: pointer;
 }
