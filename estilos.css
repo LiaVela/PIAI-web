@@ -610,7 +610,7 @@ a.btn-2:hover {
     }
 }
 
-/*CSS PARA NOTAS PERIODISTICAS*/
+/********CSS PARA NOTAS PERIODISTICAS********/
 
 #container {
     display:flex;
@@ -629,7 +629,7 @@ a.btn-2:hover {
 #container .container-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 4rem;
     max-width: 85%;
 }
 
@@ -640,7 +640,6 @@ a.btn-2:hover {
 }
 
 #container .card-new .container-img {
-    border-radius: 2rem;
     overflow: hidden;
 }
 
@@ -669,7 +668,7 @@ a.btn-2:hover {
 
 #container .content-new span {
     color: #777;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #container .btn-3 {
@@ -680,7 +679,7 @@ a.btn-2:hover {
     font-size: 16px;
     font-weight: 600px;
     border-radius: 32px;
-    margin: 3rem 0 5rem;
+    margin: 30px 0;
     display: inline-block;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease 0s;
@@ -692,4 +691,20 @@ a.btn-2:hover {
     box-shadow: 0px 15px 20px rgba(95, 158, 160, 0.4);
     color: #fff;
     transform: translateY(-7px);
+}
+
+/********RESPONSIVE DE PERIODICOS********/
+
+@media(max-width: 768px){
+
+    #container {
+        padding: 10px;
+    }
+
+    #container .container-news {
+        grid-template-columns: 1fr;
+        height: 72rem;
+        gap: 2rem;
+    }
+
 }
