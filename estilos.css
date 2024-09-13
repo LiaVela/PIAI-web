@@ -23,6 +23,10 @@ p {
     padding: 40px 80px;
 }
 
+/*section {
+    overflow: hidden;
+}*/
+
 /*HEADER*/
 
 #header {
@@ -452,15 +456,20 @@ p {
     }
 }
 
-/*FOOTER*/
+/**************FOOTER******************/
+
+.section-p1 {
+    padding: 40px 80px;
+}
 
 footer {
+    /*position: relative;*/
     background-color: #f1edea;
 }
 
 footer h4 {
     font-size: 14px;
-    margin: 5%;
+    margin: 3%;
     text-align: left;
 }
 
@@ -469,18 +478,24 @@ footer p {
     margin: 4%;
     position: relative;
     text-align: left; 
+    line-height: 1.5;
 }
 
+#datos {
+    position: relative;
+}
 
 #datos .dat-container{
+    max-width: 100%;
     display: flex;
     padding: 10px;
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 }
 
 #datos .dat{
-    width: 50%;
-    min-width: 10px;
+    width: 100%;
     text-align: center;
 }
 
@@ -488,6 +503,10 @@ footer p {
     position: relative;
 }
 
+#datos .dat iframe {
+    max-width: 100%;
+    height: auto;
+}
 
 footer .follow h4{
     text-align: center;
@@ -509,13 +528,44 @@ footer a:hover {
 }
 
 footer .copyright {
-    margin: auto;
-}
-
-footer .copyright p{
+    width: 100%;
     text-align: center;
+    padding: 1%;
 }
 
+footer .copyright span{
+    font-size: 13px;
+}
+
+/*****RESPONSIVE DE FOOTER*****/
+@media (max-width: 730px){
+
+    .section-p1 {
+        padding: 30px 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer h4 {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center; 
+    }
+
+    #datos .dat-container{
+        display: block;
+        flex-direction: column;
+    }
+
+    #datos .dat{
+        width: 100%;
+        padding: 20px;
+    }
+}
 
 
 /***************CSS PARA SOL.HTML***************/
@@ -648,6 +698,8 @@ a.btn-2:hover {
     max-width: 120rem;
     margin: 0 auto;
     align-items: center;
+
+    /*overflow: hidden;*/
 }
 
 #container h2 {
@@ -724,7 +776,7 @@ a.btn-2:hover {
 
 /********RESPONSIVE DE PERIODICOS********/
 
-@media(max-width: 768px){
+@media(max-width: 870px){
 
     #container {
         padding: 10px;
@@ -732,8 +784,8 @@ a.btn-2:hover {
 
     #container .container-news {
         grid-template-columns: 1fr;
-        height: 72rem;
-        gap: 2rem;
+        max-width: 70%;
+        gap: 3rem;
     }
 
 }
