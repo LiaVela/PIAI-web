@@ -257,7 +257,9 @@ p {
     background-position: top 25% right 0;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    display: block;
+    /*display: flex;*/
+    align-content: center;
     align-items: center;
     min-height: 85vh;
     padding: 80px 0;
@@ -698,8 +700,6 @@ a.btn-2:hover {
     max-width: 120rem;
     margin: 0 auto;
     align-items: center;
-
-    /*overflow: hidden;*/
 }
 
 #container h2 {
@@ -784,7 +784,6 @@ a.btn-2:hover {
 
     #container .container-news {
         grid-template-columns: 1fr;
-        max-width: 70%;
         gap: 3rem;
     }
 

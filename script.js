@@ -20,7 +20,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   /*SWIPER MAIN DE CADA PERIODICO*/
-  var swiper2 = new Swiper(".mySwiper2", {
+  var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     loop: true,
     pagination: {
