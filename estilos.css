@@ -23,12 +23,8 @@ p {
     padding: 40px 80px;
 }
 
-/*section {
-    overflow: hidden;
-}*/
 
-/*HEADER*/
-
+/********************SECCIÓN HEADER********************/
 #header {
     display: flex;
     align-items: center;
@@ -65,8 +61,7 @@ p {
     color: #1a1a1a;
 }
 
-/*MENÚ PRINCIPAL*/
-
+/*---------------BARRA DE NAVEGACIÓN---------------*/
 #navbar {
     display: flex;
     list-style: none;
@@ -153,9 +148,7 @@ p {
     color: #fff !important;
 }
 
-
-/*BOTON HAMBURGUESA Y BOTON CERRAR*/
-
+/*---------------BOTON HAMBURGUESA Y BOTON CERRAR---------------*/
 .btn-bar {
     display: none;
     align-items: center;
@@ -176,7 +169,7 @@ p {
     color: #5f9ea0;
 }
 
-/*********RESPONSIVE DE NAVBAR*********/
+/*...............RESPONSIVE DE BARRA DE NAVEGACIÓN...............*/
 
 @media(max-width: 1300px) {
     #header {
@@ -248,8 +241,8 @@ p {
     }
 }
 
-/**********DESCRIPCIÓN**********/
 
+/********************SECCIÓN INFO********************/
 #Info {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/comunidad.png");
     /*flex-direction: column;*/
@@ -287,8 +280,7 @@ p {
     font-size: 22px;
 }
 
-
-/*****RESPONSIVE DE DESCRIPCIÓN*****/
+/*...............RESPONSIVE DE INFO...............*/
 @media (max-width: 1021px) {
 
     #Info h1{
@@ -301,7 +293,7 @@ p {
 }
 
 
-/*NOTAS*/
+/********************SECCIÓN NOTES********************/
 
 #notes{  
     justify-content: center;
@@ -352,8 +344,7 @@ p {
     padding: 2% 6%;
 }
 
-/*BOTON "Leer mas"*/
-
+/*---------------BOTÓN 'LEER MÁS'---------------*/
 .btn {
     display: inline-block;
     padding: 8px 35px;
@@ -381,7 +372,7 @@ p {
     transition: 100ms;
 }
 
-/*************PERIODICOS****************/
+/********************SECCIÓN PERIODICOS********************/
 
 #periodicos {
     background: #fff;
@@ -436,7 +427,7 @@ p {
     opacity: 1;
 }
 
-/*RESPONSIVE DE PERIODICOS*/
+/*...............RESPONSIVE DE PERIODICOS...............*/
 @media (max-width: 880px){
     #periodicos .periodico-container {
         min-height: 25vh;
@@ -458,7 +449,7 @@ p {
     }
 }
 
-/**************FOOTER******************/
+/********************FOOTER********************/
 
 .section-p1 {
     padding: 40px 80px;
@@ -539,7 +530,7 @@ footer .copyright span{
     font-size: 13px;
 }
 
-/*****RESPONSIVE DE FOOTER*****/
+/*...............RESPONSIVE DE FOOTER...............*/
 @media (max-width: 730px){
 
     .section-p1 {
@@ -570,10 +561,9 @@ footer .copyright span{
 }
 
 
-/***************CSS PARA SOL.HTML***************/
+/*######################################## CSS PARA SOL.HTML, UNIVERSAL.HTML Y JORNADA.HTML ########################################*/
 
-/*HOME - main*/
-
+/********************SECCIÓN MAIN********************/
 .main {
     height: 85vh;
     width: 100%;
@@ -644,8 +634,7 @@ a.btn-2:hover {
     background-color: #5f9ea0;
 }
 
-/*Boton de siguiente y atras de noticias principales*/
-
+/*---------------BOTÓN DE SIGUIENTE Y ANTERIOR---------------*/
 .nav-btn {
     height: 50px;
     width: 50px;
@@ -683,16 +672,15 @@ a.btn-2:hover {
     background-color: #5f9ea0;
 }
 
-/*RESPONSIVE DEL SWIPER DE PERIODICOS*/
-
+/*...............RESPONSIVE DE MAIN...............*/
 @media screen and (max-width: 768px) {
     .nav-btn {
         visibility: hidden;
     }
 }
 
-/********CSS PARA NOTAS PERIODISTICAS********/
 
+/********************SECCIÓN CONTAINER********************/
 #container {
     display:flex;
     flex-direction: column;
@@ -719,10 +707,6 @@ a.btn-2:hover {
     flex-direction: column;
     gap: 2rem;
 }
-
-/*#container .card-new .container-img {
-    overflow: hidden;
-}*/
 
 #container .card-new .container-img img{
     width: 100%;
@@ -776,8 +760,7 @@ a.btn-2:hover {
     transform: translateY(-7px);
 }
 
-/********RESPONSIVE DE PERIODICOS********/
-
+/*...............RESPONSIVE DE PERIODICOS...............*/
 @media(max-width: 870px){
 
     #container {

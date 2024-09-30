@@ -1,4 +1,4 @@
-/*SWIPER DE NOTAS INFORMATIVAS*/
+/********************SWIPER DE NOTAS INFORMATIVAS********************/
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -19,7 +19,8 @@ var swiper = new Swiper(".mySwiper", {
 
   });
 
-  /*SWIPER MAIN DE CADA PERIODICO*/
+  
+  /********************SWIPER DE MAIN********************/
   var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     loop: true,
@@ -38,7 +39,8 @@ var swiper = new Swiper(".mySwiper", {
     }
     });
 
-  /*VARIABLES PARA EL CLICK EN NAVBAR*/
+  
+  /********************VARIABLES PARA CLICK EN NAVBAR********************/
   const bar = document.getElementById("bar");
   const close = document.getElementById("close");
   const nav = document.getElementById("navbar");
