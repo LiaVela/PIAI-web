@@ -56,3 +56,20 @@ var swiper = new Swiper(".mySwiper", {
       nav.classList.remove("active");
     })
   }
+
+/********************VARIABLES PARA CLICK EN VER MÁS********************/
+const btnMore = document.getElementById("btn-more");
+const btnHide = document.getElementById("hide");
+
+btnMore.addEventListener("click", configuration);
+
+function configuration() {
+  btnHide.classList.toggle("show");
+
+  if(btnHide.classList.contains("show")){
+    btnMore.innerHTML = "Ver menos";
+  } else {
+    btnMore.innerHTML = "Ver Más";
+  }
+
+}
