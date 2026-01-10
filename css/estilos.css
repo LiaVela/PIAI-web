@@ -244,7 +244,7 @@ p {
 
 /********************SECCIÓN INFO********************/
 #Info {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/comunidad.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/comunidad.png");
     /*flex-direction: column;*/
     /*background-position: center center;*/
     background-position: top 25% right 0;
@@ -254,7 +254,7 @@ p {
     /*display: flex;*/
     align-content: center;
     align-items: center;
-    min-height: 85vh;
+    min-height: 90vh;
     padding: 80px 0;
 }
 

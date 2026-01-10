@@ -18,7 +18,6 @@ var swiper = new Swiper(".mySwiper", {
     }
 
   });
-
   
   /********************SWIPER DE MAIN********************/
   var swiper = new Swiper(".mySwiper2", {

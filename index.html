@@ -5,51 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>PIAI</title>
+    <title>PIAI - Programa de Interculturalidad y Asuntos Indígenas</title>
     <script src="https://kit.fontawesome.com/08e5da262a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/Logo.png" type="image/x-icon">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 
 <body>
-
 <!----------------------------------------CABECERA DEL SITIO WEB---------------------------------------->
-    <section id="header">
-        <div class="nom-container">
-            <a href="#"><img src="img/Logo.png" class="logo" alt="" height="70" width="70"></a>
-            <ul id="nombre">
-                <li><a href="index.html">PIAI - Programa de Interculturalidad y Asuntos Indígenas</a></li>
-            </ul>
-        </div>
-        
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="https://piai.ibero.mx/acervos/">Acervos</a></li>
-                <li><a href="https://piai.ibero.mx/eventos/">Eventos</a></li>
-                <li><a href="https://piai.ibero.mx/proyectos/">Proyectos</a></li>
-                <li>
-                    <a>Periódicos</a>
-                    <ul class="navbar-vertical">
-                        <li><a href="sol.html">El Sol</a></li>
-                        <li><a href="universal.html">El Universal</a></li>
-                        <li><a href="jornada.html">La Jornada</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="https://piai.ibero.mx/contacto/">Contacto</a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-            <div class="btn-bar">
-                <i id="bar" class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-
-    </section>
+    <div id="header-container"></div>
 
 <!----------------------------------------INTRODUCCIÓN DEL SITIO WEB---------------------------------------->
     <section id="Info">
@@ -152,21 +120,21 @@
         <h2>Nuestros Periódicos</h2>
         <div class="periodico-container">
 
-            <div class="card" style="--i:url(img/sol.jpg)">
+            <div class="card" style="--i:url(/img/sol.jpg)">
                 <div class="content">
                     <h3>El Sol</h3>
                     <a href="sol.html">Ver Detalles</a>
                 </div>
             </div>
 
-            <div class="card" style="--i:url(img/universal.jpg)">
+            <div class="card" style="--i:url(/img/universal.jpg)">
                 <div class="content">
                     <h3>El Universal</h3>
                     <a href="universal.html">Ver Detalles</a>
                 </div>
             </div>
 
-            <div class="card" style="--i:url(img/jornada.jpeg)">
+            <div class="card" style="--i:url(/img/jornada.jpeg)">
                 <div class="content">
                     <h3>La Jornada</h3>
                     <a href="jornada.html">Ver Detalles</a>
@@ -177,44 +145,13 @@
     </section>
 
 <!----------------------------------------PIE DE PÁGINA---------------------------------------->
-    <footer class="section-p1">
-        <section id="datos">
-            <div class="dat-container">
-                <div class="dat">
-                    <img class="logo" src="img/Logo.png" alt="" height="100" width="100">
-                    <h4>Contacto</h4>
-                    <p><strong>Dirección: </strong> Prolongación Paseo de Reforma 880, Lomas de Santa Fe, México, C.P. 01219, </p>
-                    <p><strong>Teléfono: </strong> +52 (55) 5950-4000 y 9177-4400.</p>
-                    <p><strong>Lada nacional sin costo: </strong> 01 800 627-7615.</p>
-                </div>
-
-                <div class="dat">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.994122213392!2d-99.26659062494035!3d19.36940718189651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200db00f55383%3A0x31d84ccbb5acaf18!2sUniversidad%20Iberoamericana%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1721669253920!5m2!1ses!2smx" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="dat">
-                   <div class="follow"> 
-                        <h4>Siguenos en</h4>
-                        <div class="icon">
-                            <a href="https://www.instagram.com/piai_ibero?igsh=bGJ1MnlpcDFpcTIw&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href= "https://x.com/piai_uia?s=11&t=HnK4XiSOzgeb-zOkzL_9Hw" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-            
-        <div class="copyright">
-            <span>© 2024 Universidad Iberoamericana</span>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
 <!----------------------------------------ENLACES JAVASCRIPT---------------------------------------->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <script src="script.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
