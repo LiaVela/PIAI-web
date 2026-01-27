@@ -23,6 +23,23 @@ p {
     padding: 40px 80px;
 }
 
+/*-----------------ANIMATIONS-----------------*/
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.2s ease-out; 
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+.delay-200 { transition-delay: 0.2s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-600 { transition-delay: 0.6s; }
+.delay-800 { transition-delay: 0.8s; }
 
 /********************SECCIÓN HEADER********************/
 #header {
@@ -290,6 +307,239 @@ p {
     #Info p {
         font-size: 18px;
     }
+}
+
+/********************SECCIÓN NOSOTROS********************/
+.about-section {
+  display: flex;
+  min-height: 85vh;
+  background-color: #fbf3ea;
+  font-family: 'Georgia', serif;
+}
+
+.about-content {
+  width: 50%;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h1 {
+  font-size: 4rem;
+  color: #7a4a12;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #7a4a12;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*...............RESPONSIVE DE NOSOTROS...............*/
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .about-content {
+    padding: 4rem;
+  }
+
+  .about-content h1 {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: 1;
+    height: 45vh;
+  }
+
+  .about-content {
+    order: 2;
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+
+/********************SECCIÓN FILOSOFÍA********************/
+.philosophy-section {
+  background-color: #fff9ee;
+  padding: 6rem 4rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.philosophy-title {
+  font-size: 2.5rem;
+  color: #7a4a12;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  line-height: 1.3;
+}
+
+.philosophy-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.philosophy-card {
+    background-color: #ffe1a8;
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: default;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(122, 74, 18, 0.15);
+}
+
+.card-number {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #7a4a12;
+}
+
+.philosophy-card h3 {
+  font-size: 1.8rem;
+  color: #7a4a12;
+  margin-bottom: 1rem;
+}
+
+.philosophy-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #7a4a12;
+}
+
+/*...............RESPONSIVE DE FILOSOFÍA...............*/
+@media (max-width: 900px) {
+  .philosophy-section {
+    padding: 4rem 2rem;
+  }
+
+  .philosophy-title {
+    font-size: 2rem;
+  }
+
+  .philosophy-card {
+    max-width: 100%;
+  }
+}
+
+/********************SECCIÓN VALORES********************/
+.values-section {
+  background-color: #fbf3ea;
+  padding: 4rem 3rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.values-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.15em;
+  text-decoration: underline;
+  margin-bottom: 4rem;
+  color: #7a4a12;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.value-card {
+  position: relative;
+}
+
+.value-image {
+  width: 180px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.value-card:hover .value-image img {
+    transform: scale(1.1);
+}
+
+.value-card h3 {
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: #0f766e;
+  transition: color 0.3s ease;
+}
+
+.value-card:hover h3 {
+    color: #7a4a12;
+}
+
+.value-card p {
+    font-size: 0.95rem;
+    color: #5a3a1a;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin: 0;
+}
+
+/*...............RESPONSIVE DE VALORES...............*/
+@media (max-width: 1100px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -680,41 +930,41 @@ a.btn-2:hover {
 }
 
 
-/********************SECCIÓN CONTAINER********************/
-#container {
+/********************SECCIÓN NEWS CONTAINER********************/
+.news-container {
     display:flex;
     flex-direction: column;
     gap: 2rem;
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 30px auto;
     align-items: center;
 }
 
-#container h2 {
+.news-container h2 {
     text-align: center;
     padding: 2%;
 }
 
-#container .container-news {
+.news-container .container-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     max-width: 85%;
 }
 
-#container .card-new {
+.news-container .card-new {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-#container .card-new .container-img img{
+.news-container .card-new .container-img img{
     width: 100%;
     max-height: 35vh;
     object-fit: cover;
 }
 
-#container .content-new a h3 {
+.news-container .content-new a h3 {
     font-size: 20px;
     margin-bottom: 0.2rem;
     color: #000;
@@ -722,23 +972,23 @@ a.btn-2:hover {
     text-decoration: none;
 }
 
-#container .content-new a h3:hover {
+.news-container .content-new a h3:hover {
     color: #5f9ea0;
     cursor: pointer;
 }
 
-#container .content-new p {
+.news-container .content-new p {
     margin-top: 1rem;
     font-size: 16px;
     color: #777;
 }
 
-#container .content-new span {
+.news-container .content-new span {
     color: #777;
     font-size: 13px;
 }
 
-#container .btn-3 {
+.news-container .btn-3 {
     padding: 6px 30px;
     background-color: #5f9ea0;
     color: #fff;
@@ -751,14 +1001,14 @@ a.btn-2:hover {
     cursor: pointer;
 }
 
-#container .btn-3:hover {
+.news-container .btn-3:hover {
     background-color: rgb(95, 158, 160);
     box-shadow: 0px 15px 20px rgba(95, 158, 160, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
 
-#container .btn-4 {
+.news-container .btn-4 {
     padding: 10px 60px;
     background-color: #5f9ea0;
     color: #fff;
@@ -772,7 +1022,7 @@ a.btn-2:hover {
     cursor: pointer;
 }
 
-#container .btn-4:hover {
+.news-container .btn-4:hover {
     background-color: rgb(95, 158, 160);
     box-shadow: 0px 15px 20px rgba(95, 158, 160, 0.4);
     color: #fff;
@@ -784,11 +1034,11 @@ a.btn-2:hover {
 /*...............RESPONSIVE DE PERIODICOS...............*/
 @media(max-width: 870px){
 
-    #container {
+    .news-container {
         padding: 10px;
     }
 
-    #container .container-news {
+    .news-container .container-news {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
@@ -798,10 +1048,35 @@ a.btn-2:hover {
 
 /*---------------BOTÓN PARA VER MÁS NOTICIAS---------------*/
 
-.hide {
+.news-container .card-new.hidden {
     display: none;
 }
 
-.show{
-    display: block;
+#load-more {
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; 
+    width: fit-content;
+    text-align: center;
+}
+
+.btn-more {
+    padding: 10px 60px;
+    background-color: #5f9ea0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 20px 0 60px;
+    display: inline-block;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background-color: rgb(95, 158, 160);
+    box-shadow: 0px 15px 20px rgba(95, 158, 160, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
